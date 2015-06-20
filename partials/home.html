@@ -1,2 +1,18 @@
-<h1>Hello Planet </h1>
-<div id='calendar'> </div>
+<h1>Billing</h1>
+
+<h4>Enter FLM</h4>
+<form>
+  <div class='form-group'>
+    <input id='FLM' ng-model='FLM' name='FLM'>
+  </div>
+  <button ng-click='getRes()' class='btn btn-success'>Get Site</button>
+</form>
+
+<h1> Residential:</h1>
+<h1>{{homes.Site}}</h1>
+
+<div class="row" ng-show='FLM'>
+  <div class="col-xs-3">{{homes.individual}}</div>
+  <div class="col-xs-3">{{homes.program}}</div>
+  <div class="col-xs-3">{{homes.LFT}}</div>
+  <div class="col-xs-3">
